@@ -1,0 +1,592 @@
+/* Home Page */
+
+.home-page {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0 30px;
+}
+
+.home-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-link {
+    display: block;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    transform: none;
+}
+
+.home-profile h1 {
+    margin-bottom: 10px;
+    font-size: 55px;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.home-profile h2 {
+    max-width: 550px;
+    margin-bottom: 30px;
+    color: #999999;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    color: #222222;
+    transition: color 0.2s ease;
+}
+
+.social-links svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.social-links a:hover {
+    color: #999999;
+}
+
+.home-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 55px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+    width: 100%;
+    max-width: 380px;
+}
+
+.home-navigation a {
+    color: #777777;
+    font-size: 22px;
+    transition: color 0.2s ease;
+}
+
+.home-navigation a:hover {
+    color: #222222;
+}
+
+.home-footer {
+    margin-top: 65px;
+}
+
+.home-footer p {
+    color: #999999;
+    font-size: 17px;
+}
+
+@media (max-width: 600px) {
+    .home-profile h1 {
+        font-size: 42px;
+    }
+
+    .home-profile h2 {
+        font-size: 20px;
+    }
+
+    .home-navigation {
+        gap: 22px;
+    }
+
+    .home-navigation a {
+        font-size: 22px;
+    }
+}
+
+
+/* About Page */
+
+.about-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.about-intro {
+    margin-bottom: 15px;
+}
+
+.about-intro h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.about-section {
+    margin-bottom: 45px;
+}
+
+.about-section h2 {
+    margin-bottom: 18px;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.about-section p {
+    margin-bottom: 18px;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.about-highlight {
+    margin: 22px 0;
+    padding-left: 16px;
+    border-left: 2px solid #dddddd;
+    color: #777777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-highlight strong {
+    color: #333333;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 22px;
+    border-radius: 3px;
+}
+
+.page-footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.page-footer p {
+    color: #999999;
+    font-size: 17px;
+}
+
+.first-code-image {
+    max-width: 300px;
+}
+
+/* Internal Pages Header */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.site-name {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.page-navigation a {
+    color: #777777;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.page-navigation a:hover,
+.page-navigation a.active {
+    color: #222222;
+}
+
+@media (max-width: 600px) {
+
+    .page-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .page-navigation {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .about-page {
+        padding: 10px 0;
+    }
+
+    .about-intro h1 {
+        font-size: 32px;
+    }
+
+    .about-section h2 {
+        font-size: 20px;
+    }
+
+    .about-section p {
+        font-size: 15px;
+    }
+
+}
+
+.text-link {
+    color: #333333;
+    text-decoration: underline;
+    text-decoration-color: #cccccc;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.text-link:hover {
+    color: #888888;
+}
+
+
+/* Projects Page */
+
+.projects-page {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.projects-intro {
+    margin-bottom: 55px;
+}
+
+.projects-intro h1 {
+    margin-bottom: 18px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.projects-intro p {
+    max-width: 650px;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* Featured Projects */
+
+.featured-projects,
+.other-projects {
+    margin-bottom: 60px;
+}
+
+.featured-projects>h2,
+.other-projects>h2 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.project-item {
+    margin-bottom: 50px;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 22px;
+    border-radius: 3px;
+}
+
+.project-content h3,
+.other-project-item h3 {
+    margin-bottom: 14px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.project-content p,
+.other-project-item p {
+    margin-bottom: 16px;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.project-tech {
+    color: #999999 !important;
+    font-size: 14px !important;
+}
+
+/* Project Links */
+
+.project-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.project-links a,
+.project-source-link {
+    color: #333333;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: #cccccc;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+}
+
+.project-links a:hover,
+.project-source-link:hover {
+    color: #888888;
+}
+
+/* Other Projects */
+
+.other-project-item {
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.other-project-item:last-child {
+    border-bottom: none;
+}
+
+.project-source-link {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .projects-page {
+        padding: 5px 0;
+    }
+
+    .projects-intro h1 {
+        font-size: 32px;
+    }
+
+    .featured-projects>h2,
+    .other-projects>h2 {
+        font-size: 22px;
+    }
+
+    .project-content h3,
+    .other-project-item h3 {
+        font-size: 19px;
+    }
+
+    .project-content p,
+    .other-project-item p {
+        font-size: 15px;
+    }
+
+}
+
+/* Separators Between Projects */
+
+.project-item {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.other-project-item {
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* Resume Page */
+
+.resume-page {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.resume-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 55px;
+}
+
+.resume-intro h1 {
+    margin-bottom: 18px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.resume-intro p {
+    max-width: 600px;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.resume-download {
+    flex-shrink: 0;
+    padding: 11px 18px;
+    border: 1px solid #dddddd;
+    color: #333333;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.resume-download:hover {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+}
+
+/* Resume Sections */
+
+.resume-section {
+    margin-bottom: 45px;
+}
+
+.resume-section>h2 {
+    margin-bottom: 25px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.resume-section>p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* Technical Skills */
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 35px;
+}
+
+.skill-item h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skill-item p {
+    color: #777777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Experience, Education & Achievements */
+
+.resume-item {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.resume-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.resume-item-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 12px;
+}
+
+.resume-item-heading h3 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.resume-item-heading span {
+    flex-shrink: 0;
+    color: #999999;
+    font-size: 14px;
+}
+
+.resume-item>p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .resume-page {
+        padding: 0px 0;
+    }
+
+    .resume-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .resume-intro h1 {
+        font-size: 32px;
+    }
+
+    .resume-section>h2 {
+        font-size: 21px;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .resume-item-heading {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+}
